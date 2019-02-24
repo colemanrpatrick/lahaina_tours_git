@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+</head>
+  <body>
+    <div class="masthead">
+      <section>
+        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+        <a href="#" class="cart-link">
+          <i class="material-icons">shopping_cart</i>
+        </a>
+        <button type="button" class="menu-btn" name="button" id="menu-btn" onclick="idToggle('main-nav','active')">
+          <hr class="menu-btn-hr-1"/>
+          <hr class="menu-btn-hr-2"/>
+          <hr class="menu-btn-hr-3"/>
+        </button>
+      </section>
+      <nav class="main-nav" id="main-nav">
+        <a href="#">luaus</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+        <a href="#">cart</a>
+      </nav>
+      <nav class="phone">
+        <ul>
+          <li class="phone-left"><a href="#" onclick="tel:+1-866-482-9775"><span>toll free</span> 1-866-482-9775</a></li>
+          <li class="phone-right"><a href="#" onclick="tel:808-892-2082"><span>local</span> 808-892-2082</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ===== -->
+    <div class="checkpoint-first">
+    <div class="banner-wrapper">
+      <div class="banner-cont">
+        <div class="banner" id="banner1">
+          <section>
+            <article><p>pictured:</br><span>Haleakala Sunset Tour</span></p></article>
+          </section>
+        </div>
+        <div class="banner" id="banner2">
+          <section>
+            <article><p>pictured:</br><span>Hana Adventure</span></p></article>
+          </section>
+        </div>
+        <div class="banner" id="banner3">
+          <section>
+            <article><p>pictured:</br><span>Air Maui Molokai Tour</span></p></article>
+          </section>
+        </div>
+      </div>
+      <header class="banner-header">
+        <h3>discount<span></br>maui </span>tours</h3>
+        <button type="button" name="button" onclick="scrollDown('product-nav',100)"><span>explore</span><i class="material-icons">arrow_downward</i></button>
+      </header>
+      <nav class="banner-nav">
+        <ul>
+          <li><button id="banner-prev" onclick="sliderCurrent(-1);endTimer()" type="button" name="button"><i class="material-icons">chevron_left</i></button></li>
+          <li><button type="button" onclick="sliderCurrent(1);endTimer();" name="button" class="button-current"><i class="material-icons">radio_button_unchecked</i></button></li>
+          <li><button type="button" onclick="sliderCurrent(2);endTimer();" name="button" class="button-current"><i class="material-icons">radio_button_unchecked</i></button></li>
+          <li><button type="button" onclick="sliderCurrent(3);endTimer();" name="button" class="button-current"><i class="material-icons">radio_button_unchecked</i></button></li>
+          <li><button id="banner-next" onclick="sliderPlus(1);endTimer();" type="button" name="button"><i class="material-icons">chevron_right</i></button></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+    <!-- ===== -->
+    <div class="product-nav">
+      <header>choose an activity below
+      </header>
+      <div class="products">
+        <a href="#" id="nature-icon"><img src="images/nature-logo.png" alt=""><span>nature tours</span></a>
+        <a href="#" id="sight-icon"><img src="images/sightseeing-logo.png" alt=""><span>sightseeing tours</span></a>
+        <a href="#" id="heli-icon"><img src="images/heli-logo.png" alt=""><span>helicopter tours</span></a>
+        <a href="#" id="atv-icon"><img src="images/atv-logo.png" alt=""><span>atv tours</span></a>
+        <a href="#" id="kayak-icon"><img src="images/kayak-logo.png" alt=""><span>kayaking</span></a>
+        <a href="#" id="horse-icon"><img src="images/horse-logo.png" alt=""><span>horseback riding</span></a>
+        <a href="#" id="whale-icon"><img src="images/whale-logo.png" alt=""><span>whale watching</span></a>
+        <a href="#" id="plane-icon"><img src="images/plane-icon.png" alt=""><span>interisland tours</span></a>
+        <a href="#" id="zip-icon"><img src="images/.png" alt=""><span>zipline tours</span></a>
+      </div>
+    </div>
+    <!-- ====== -->
+  <!-- ====== -->
+    <div class="detail-section">
+      <header>popular tours</header>
+        <ul class="detail-row">
+          <li><img src="images/sunset.jpg" alt=""><h2>Haleakala</br>Sunrise Tour</h2><p>from<br/><b>$00.00</b></p><p><span>save up to<br/><b>25%</b></span></p><a href="#">book now</a></li>
+          <li><img src="images/sunrise.jpg" alt=""><h2>Haleakala</br>sunset Tour</h2><p>from<br/><b>$00.00</b></p><p><span>save up to<br/><b>25%</b></span></p><a href="#">book now</a></li>
+          <li><img src="images/mauilite1.jpg" alt=""><h2>Haleakala, Central Maui and Iao Valley</h2><p>from<br/><b>$00.00</b></p><p><span>save up to<br/><b>25%</b></span></p><a href="#">book now</a></li>
+          <li><img src="images/hana.png" alt=""><h2>Hana</br>Adventure</h2><p>from<br/><b>$00.00</b></p><p><span>save up to<br/><b>25%</b></span></p><a href="#">book now</a></li>
+        </ul>
+    </div>
+    <div class="article-wrapper">
+
+
+    <div class="article-section">
+      <div class="article-bloc" id="article-1">
+        <div class="article-img"><img src="images/image-1.png" alt=""> </div>
+        <article>
+          <header>quis nostrud exercitation ullamco</header>
+          <p><span>L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+      </div>
+      <div class="article-bloc" id="article-2">
+        <div class="article-img"><img src="images/image-1.png" alt=""></div>
+        <article>
+          <header>quis nostrud exercitation ullamco</header>
+          <p><span>L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+      </div>
+      <div class="article-bloc" id="article-3">
+        <div class="article-img"><img src="images/image-1.png" alt=""></div>
+        <article>
+          <header>quis nostrud exercitation ullamco</header>
+          <p><span>L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+      </div>
+      <div class="article-bloc" id="article-4">
+        <div class="article-img"></div>
+        <article>
+          <header>quis nostrud exercitation ullamco</header>
+          <p><span>L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+      </div>
+    </div>
+    <div class="scroll-nav">
+      <ul>
+        <li><button id="prev-scroll" type="button" name="button"><i class="material-icons">chevron_left</i></button></li>
+        <li><p class="scroll-span">1 / 4</p></li>
+        <li><button id="next-scroll" type="button" name="button"><i class="material-icons">chevron_right</i></button></li>
+      </ul>
+    </div>
+  </div>
+    <!-- ====== -->
+    <div class="coverage-section">
+      <h2>we've got you covered</h2>
+      <ul>
+        <li id="c-1">
+          <span>
+          <i class="material-icons icon-first">laptop</i>
+          <i class="material-icons icon-second">lock</i>
+          </span>
+          <header>safe and</br>secure</header>
+          <p>Online booking system with validated privacy protection</p>
+        </li>
+        <li id="c-2">
+          <span>
+            <i class="material-icons icon-first">event</i>
+            <i class="material-icons icon-second">call</i>
+          </span>
+          <header>same day</br>reservationst</header>
+          <p>Receive a full refund if cancellation is made at least 48 hours in advance</p>
+        </li>
+        <li id="c-3">
+          <span>
+            <i class="material-icons icon-first">sentiment_satisfied_alt</i>
+          </span>
+          <header>friendly</br>support</header>
+          <p>Receive your voucher the same day after booking your activity</p>
+        </li>
+        <li id="c-4">
+          <span>
+            <i class="material-icons icon-first">undo</i>
+            <i class="material-icons icon-second">attach_money</i>
+          </span>
+          <header>money back</br>guranteed</header>
+          <p>Our representatives will help you select the best activities and ensure 100% satisfaction</p>
+        </li>
+      </ul>
+    </div>
+    <!-- ====== -->
+  </body>
+
+  <script type="text/javascript" src="toggle.js"></script>
+  <script type="text/javascript" src="checkpoint.js"></script>
+  <script type="text/javascript" src="gallery.js"></script>
+  <script type="text/javascript" src="scroll.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</html>
