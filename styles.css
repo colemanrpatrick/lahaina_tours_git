@@ -569,6 +569,21 @@ a{
     background-position: center;
   }
 }
+@media(max-width:550px){
+  .banner-header h3 {
+    padding-bottom: 0em;
+    font-size: 45px;
+  }
+  .banner-nav ul {
+    padding: 0.5em;
+  }
+  .banner-cont {
+    height: 280px;
+  }
+  .banner {
+    height: 380px;
+  }
+}
 /*==================*/
 .product-nav {
   background-color: #F9DC77;
