@@ -588,7 +588,8 @@ a{
 .product-nav {
   background-color: #F9DC77;
   background-size: contain;
-  padding-bottom: 4em;
+  padding-bottom: 5em;
+  padding-top: 4em;
 }
 .product-nav header {
 	font-size: 40px;
@@ -603,128 +604,158 @@ a{
 .products{
   width: 1200px;
   margin: 0 auto;
-  height: 350px;
   padding: 1em;
   position: relative;
-}
-.products a{
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-  width: 15%;
-  transition: 0.3s;
-}
-.products a:hover{
-  transform: scale(1.2);
-}
-.products a img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  padding: 0.25em;
-  background-color: #000074;
-}
-.products a span{
-  display: block;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-#nature-icon{
-  left: 2.75%;
-  top: 8%;
-}
-#sight-icon{
-  left: 22.65%;
-  top: 8%;
-}
-#heli-icon {
-  left: 42.5%;
-  top: 8%;
-}
-#atv-icon{
-  left: 62.5%;
-  top: 8%;
-}
-#kayak-icon {
-  left: 82.2%;
-  top: 8%;
-}
-#horse-icon {
-  left: 12.6%;
-  top: 55%;
-}
-#whale-icon{
-  left: 32.6%;
-  top: 55%;
-}
-#plane-icon {
-  left: 52.4%;
-  top: 55%;
-}
-#zip-icon {
-  left: 72.2%;
-  top: 55%;
 }
 @media(max-width:1250px){
   .products{
     width: 90%;
   }
 }
-@media(max-width:650px){
-  .products{
-    height: 375px;
-    width: 100%;
+.products{
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+.product {
+  text-align: center;
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  transition: 0.3s;
+  background-color: white;
+  border-radius: 2em;
+  padding: 0.5em;
+  position: relative;
+  margin: 0.25em;
+}
+.tool-tip {
+  position: absolute;
+  top: -130%;
+  background-color: white;
+  width: 130%;
+  z-index: 4;
+  transform: translateX(-50%) scaleY(0);
+  left: 50%;
+  background-color: #fff;
+  border-radius: 2em;
+  padding: 1em;
+  background-color: #0078ff;
+  transition: 0.3s;
+}
+.tool-tip-btn {
+  background-color: #0078ff;
+  color: white;
+  border-radius: 50%;
+  border: 0;
+  border: 0;
+  padding: 1em;
+  font-size: 18px;
+  line-height: 0.5em;
+  display: inline;
+  vertical-align: middle;
+  transition: 0.3s;
+}
+.tool-tip-btn.active {
+  background-color: skyblue;
+}
+.tool-tip.active{
+  transform: translateX(-50%) scaleY(1);
+}
+.tool-tip section{
+  position: relative;
+}
+.tool-tip section::after {
+    content: '';
+    position: absolute;
+    right: 3.5em;
+    bottom: -40px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 24px solid #0078ff;
+}
+.tool-tip section p{
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 300;
+  padding: 0.25em;
+}
+.product a {
+  display: inline-block;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+.product span {
+  font-size: 20px;
+  line-height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  width: 140px;
+  text-transform: uppercase;
+}
+.product img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 0.25em;
+  background-color: #000074;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media(max-width:1000px){
+  .product-span{
+    width: 120px;
   }
-  .products a{
-    width: 25%;
+}
+@media(max-width:700px){
+  .product span {
+    width: 120px;
   }
-  .products a span{
-    font-size: 18px;
-    line-height: 1em;
-  }
-  .products a img {
+  .product img {
     width: 60px;
     height: 60px;
   }
-  #nature-icon {
-    left: 6.6%;
+  .tool-tip section p {
+    font-size: 16px;
+    padding: 0;
   }
-  #sight-icon{
-    left: 37.5%;
+}
+@media(max-width:600px){
+  .product span {
+    font-size: 16px;
+    width: 80px;
   }
-  #heli-icon {
-    left: 68%;
+  .product-nav {
+    padding-bottom: 4em;
+    padding-top: 1em;
   }
-  #atv-icon{
-    left: 7%;
-    top: 38.6%;
+  .tool-tip {
+    top: -160%;
   }
-  #kayak-icon {
-    left: 37.5%;
-    top: 38.6%;
+  .product-nav header {
+    font-size: 30px;
+    line-height: 1em;
   }
-  #horse-icon {
-    left: 68%;
-    top: 38.6%;
+}
+@media(max-width:550px){
+  .product img {
+    width: 50px;
+    height: 50px;
   }
-  #whale-icon{
-    left: 7%;
-    top: 70%;
-  }
-  #plane-icon {
-    left: 37.5%;
-    top: 70%;
-  }
-  #zip-icon {
-    left: 68%;
-    top: 70%;
+  .tool-tip {
+    top: -185%;
   }
 }
 @media(max-width:400px){
-  .products a span{
+  .product span{
     font-size: 16px;
   }
 }
+
 /*=======================*/
 .detail-section {
   width: 100%;
@@ -839,6 +870,10 @@ a{
   .detail-row li {
     width: 50%;
   }
+  .detail-section header{
+    font-size: 30px;
+    line-height: 1em;
+  }
 }
 @media(max-width:500px){
   .detail-row a {
@@ -882,7 +917,7 @@ a{
   overflow-x: hidden;
   margin: 0 auto;
 }
-@media(max-width:1250px){
+@media(max-width:1280px){
   .article-section{
     width: 100%;
   }
@@ -1163,6 +1198,8 @@ a{
 @media(max-width:600px){
   .coverage-section h2 {
     padding: 1em;
+    font-size: 30px;
+    line-height: 1em;
   }
   .coverage-section ul li p {
     width:100%;
